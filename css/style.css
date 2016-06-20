@@ -345,9 +345,14 @@ ul.footer-menu li a:hover {
     }
 }
 
+.swkl {
+    background-color: #fcd93b;
+}
 
-// .swkl {
-//     background-image: url('../img/team-enspark.jpg');
-//     background-size: cover;
-//     height: 600px;
-// }
+.assessment {
+    margin: 30px 0px;
+}
+
+.assessment h5 {
+    margin-bottom: 24px;
+}

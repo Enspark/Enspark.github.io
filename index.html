@@ -17,12 +17,36 @@
     <link rel="shortcut icon" href="asset/favicon.png" type="image/png">
     <link rel="icon" href="asset/favicon.png" type="image/png">
 
-    <title>Learn Web Development - Coding Bootcamp</title>
+    <title>Learn Web Development - Power of Code Holiday Bootcamp 2016</title>
   </head>
 
   <body>
 
-    <div class="header">
+    <div class="btn-navi">
+      <a href="#" id="open-nav">MENU</a>
+    </div>
+
+    <div id="menu-navi">
+      <div class="close">
+        <a href="#" id="close-nav">X</a>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Learn to Code</a>
+        </li>
+        <li>
+          <a href="course.html">Power of Code Holiday Camp 2016</a>
+        </li>
+        <li>
+          <a href="team.html">Meet the Team</a>
+        </li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header home">
       <div class="container pg-section">
         <div class="row">
           <div class="col-md-6 header-content">
@@ -81,24 +105,21 @@
             <img src="asset/svg/university.svg" class="center-block" alt="">
             <h4>Time Unwasted</h4>
             <p>
-              Learn in the most concise and practical way through straight forward exercises.
-              Always aware of progress, strengths and weaknessess with our competancy based curiculum
+              Learn in the most concise and practical way. Our curriculum playlist shows what you know and where you're headed next.
             </p>
           </div>
           <div class="col-md-4">
             <img src="asset/svg/reading.svg" class="center-block" alt="">
             <h4>Never Left Behind</h4>
             <p>
-              Your needs are never new to our instructors, all experienced in teaching and communicating with teenagers.
-              Anak Malaysia represent- that means we're friendly, multilingual &amp; down to earth LAH
+              We know teenagers because we serve them often. Anak Malaysia represent- that means we're friendly, multilingual &amp; down to earth LAH!
             </p>
           </div>
           <div class="col-md-4">
             <img src="asset/svg/graduate.svg" class="center-block" alt="">
             <h4>Heads Held High</h4>
             <p>
-              Showcase acquired skills &amp; knowledge through strong &amp; practical deliverables.
-              Discover real world application ideas and projects from industrial guidance and mentors.
+              Showcase your skills through practical deliverables. Discover real world application projects from industrial mentors.
             </p>
           </div>
         </div>
@@ -123,22 +144,6 @@
       </div>
     </div>
 
-    <!-- <div class="about-us">
-      <div class="container pg-section">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Enspark won the first ever Startup Weekend Edu.Tech Kuala Lumpur</h2>
-          </div>
-          <div class="col-md-6">
-            <img src="asset/team-enspark.jpg" alt="" class="img-responsive">
-          </div>
-          <div class="col-md-6">
-            <img src="asset/cover-swkledu.jpeg" alt="" class="img-responsive">
-          </div>
-        </div>
-      </div>
-    </div> -->
-
     <div class="apply-now">
       <a href="http://powerofcode16.peatix.com" target="_new">
         <div class="container-fluid pg-section">
@@ -157,7 +162,6 @@
             Bandar Manjalara 52200 K.L.
           </p>
         </div>
-        <!-- <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EnU1MywgSmFsYW4gTWVkYW4gUHV0cmEgNiwgTWVkYW4gUHV0cmEgQnVzc2luZXNzIENlbnRyZSwgNTIyMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWE&key=AIzaSyACp6bJyi75yMsEEuN3zBfeHYKB4pvprew" allowfullscreen></iframe> -->
       </div>
     </div>
 
@@ -219,6 +223,14 @@
 
          $("#back-end").mouseleave(function(){
            $("#front-end").find('img').css("opacity", "1");
+         });
+
+         $("#open-nav").mousedown(function(){
+          $("#menu-navi").show(200);
+         });
+
+         $("#close-nav").mousedown(function(){
+          $("#menu-navi").hide(200);
          });
       });
     </script>

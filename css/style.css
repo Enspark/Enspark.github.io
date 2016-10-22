@@ -84,6 +84,8 @@
   .choose-path a {
     text-decoration: none;
     color: inherit; }
+  .choose-path a.btn {
+    color: #fff; }
   .choose-path .path-item .path-content {
     background-color: #fff;
     border-radius: 3px;
